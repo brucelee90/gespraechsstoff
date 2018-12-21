@@ -6,7 +6,11 @@ body, html {
     margin: 0;
     font-family: Arial;
     background: #eee;
-    background-image: url("pix/pic2.jpeg");
+    background-image: url("https://github.com/brucelee90/gespraechsstoff/blob/master/pix/pic2.jpeg");    
+    /*  
+        funktioniert nur, wenn Dateien lokal vorhanden
+        background-image: url("pix/pic2.jpeg");
+    */
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: right;
