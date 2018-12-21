@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gesprächsstoff</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {box-sizing: border-box}
+        
+        /* Set height of body and the document to 100% */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+        
+        /* Style tab links */
+        .tablink {
+            background-color: #ccc;
+            color: #000;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 12px;
+            width: 25%;
+        }
+        
+        .tablink:hover {
+            background-color: #bbb;
+        }
+        
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: white;
+            display: none;
+            padding: 100px 20px;
+            height: 100%;
+        }
+
+        button{
+            
+        }
+
+        .four{
+            margin: 0;
+            margin-top: 10px;
+            width: 33% !important;
+            border-radius: 0%;
+        }
+
+        /* #Home {background-color: red;}
+        #News {background-color: green;}
+        #Contact {background-color: blue;}
+        #About {background-color: orange;} */
+        </style>
+
+</head>
+<body>       
+    <div class="container">
+            <div id="list">
+                    <button class="tablink four columns" onclick="openPage('Norm', this, '#aaa')" id="norm" >Normales</button>
+                    <button class="tablink four columns" onclick="openPage('Pers', this, '#aaa')" id="pers">Persönliches</button>
+                    <button class="tablink four columns" onclick="openPage('Smal', this, '#aaa')" id="smal">Small Talk</button>
+            </div>
+            <!-- <div id="Norm" class="tabcontent">
+                <h3>Home</h3>
+                <p>Home is where the heart is..</p>
+            </div>
+    
+            <div id="Pers" class="tabcontent">
+                <h3>News</h3>
+                <p>Some news this fine day!</p> 
+            </div>
+    
+            <div id="Smal" class="tabcontent">
+                <h3>Contact</h3>
+                <p>Get in touch, or swing by for a cup of coffee.</p>
+            </div> -->
+        <!-- <div id="mySidenav" class="sidenav" onclick="closeNav()">
+        <ul id="list">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li> 
+          <li><a href="#" class="categories" id="norm" >Normales</a></li>
+          <li><a href="#" class="categories" id="pers" >Persönliches</a></li>
+          <li><a href="#" class="categories" id="smal" >Small Talk</a></li>
+        </ul>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span> -->
+    <div id="kategore-text"><span id="category"></span>
+    <button id="button" value="generate" class="u-full-width">Gesprächsstoff generieren</button>
+    </div>
+    
+    <div id="frage" class="u-full-width" style="float: left;"></div>
+
+
+
+
+    </div>
+
+<script src="menue.js"></script>
+<script src="app.js"></script>
+<script>
+    function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    
+    }
+    // Get the element with id="defaultOpen" and click on it
+     document.getElementById("norm").click();
+    </script>
+</body>
+</html>
