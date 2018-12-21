@@ -1,0 +1,104 @@
+* {box-sizing: border-box}
+        
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    background: #eee;
+    background-image: url("pix/pic2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+}
+
+.cn {
+    display: table-cell;
+    width: 100vw;
+    height: 94vh;
+    vertical-align: middle !important;
+    text-align: center;
+  }
+
+  form{
+      margin: 0;
+  }
+
+/* Style navbar */
+.outer-div{
+    background-color: #A72534;
+    border: black solid 2px
+}
+
+.tablink {
+    color: #23585C;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+    margin: auto;
+    background-color:#EEF4F2;
+}
+
+.tablink:hover {
+    color: #A72534;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 231);
+    border: #EEF4F2 solid 7px;
+}
+
+.four{
+    margin: 0;
+    width: 33.333% !important;
+    border-radius: 0%;
+    height: 6vh;
+}
+
+.navbar{
+    background-color:#EEF4F2;
+    height: 6vh;
+}
+
+#list{
+    margin: auto;
+}
+
+/* carousel */
+
+.carousel{
+    /* width: 75% !important; */
+    margin: auto;
+    margin-top: 50px;
+    display: inline-block;
+    width: 400px !important;
+    height: 70vh !important;
+    border-radius: 30px 0 30px 0;
+    opacity: 0.95;
+}
+
+.carousel-item{
+
+    /* background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/regal.png");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #EEF4F2;
+    color: #23585C;
+    padding: 25px;
+    
+
+}
+
+.carousel-item p{
+    margin: 10px;
+    font-size: 18px !important;
+
+}
+
+div p{
+    display: table-cell;
+    width: 100vw;
+    height: 35vh;
+    vertical-align: middle;
+    text-align: center;
+}
